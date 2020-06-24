@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>3단 레이아웃</title>
+<style>
+body{margin:0;}
+#wrap{
+width: 96%;
+min-width: 480px;
+max-width: 1024px;
+background: #ccc;
+margin: 0 auto;/* 중앙배치 */
+}
+#header{
+background: #eee;
+padding: 20px;
+}
+#header .logo{
+float: left;
+}
+#content{
+position: relative;
+height: auto;
+}
+#content img{
+width: 100%;
+}
+#footer{
+background: #000;
+height: 50px;
+text-align: center;
+padding: 20px;
+}
+#footer span{
+color: #fff;
+}
+#mainContent{
+float: right;
+width: 75%;
+height: auto;
+position: relative;
+}
+#subContent{
+float: left;
+width: 20%;
+background: #ee8;
+position: absolute;
+height: 100%;
+}
+.clear{
+clear: both;
+}
+#firstContent{
+float:left;
+width: 70%;
+}
+#secondContent{
+float: right;
+width: 25%;
+padding:1%;
+background: #e8e;
+}
+a{
+text-decoration: none;
+color: #000;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+<div id="header">
+     <span class="logo"><img alt="사이트 로고" src="img/logo.png"></span>
+     <h1>CSS활용 강의</h1>
+     <h2>레이아웃 - 3단 레이아웃 만들기</h2>
+</div><!-- header끝. -->
+<div id="content">
+   <div id="mainContent">
+      <div id="secondContent">
+       <h4>플로트 기반의 레이아웃</h4>
+       <p>국가안전보장회의는 대통령이 주재한다. 국무총리는 대통령을 보좌하며, 행정에 관하여 대통령의 명을 받아 행정각부를 통할한다. 모든 국민은 능력에 따라 균등하게 교육을 받을 권리를 가진다. 정부는 예산에 변경을 가할 필요가 있을 때에는 추가경정예산안을 편성하여 국회에 제출할 수 있다. 국가는 주택개발정책등을 통하여 모든 국민이 쾌적한 주거생활을 할 수 있도록 노력하여야 한다. 훈장등의 영전은 이를 받은 자에게만 효력이 있고, 어떠한 특권도 이에 따르지 아니한다. 예비비는 총액으로 국회의 의결을 얻어야 한다. 예비비의 지출은 차기국회의 승인을 얻어야 한다. 모든 국민은 법률이 정하는 바에 의하여 선거권을 가진다.</p>
+      </div><!-- second끝. -->
+      <div id="firstContent">
+       <h3>레이아웃 만들기</h3>
+       <img src="img/bg1.jpg" alt="배경이미지">
+       <p>모든 국민은 사생활의 비밀과 자유를 침해받지 아니한다. 국무총리는 국회의 동의를 얻어 대통령이 임명한다. 법원은 최고법원인 대법원과 각급법원으로 조직된다. 정당은 법률이 정하는 바에 의하여 국가의 보호를 받으며, 국가는 법률이 정하는 바에 의하여 정당운영에 필요한 자금을 보조할 수 있다. 군사법원의 조직·권한 및 재판관의 자격은 법률로 정한다. 사법권은 법관으로 구성된 법원에 속한다. 국가유공자·상이군경 및 전몰군경의 유가족은 법률이 정하는 바에 의하여 우선적으로 근로의 기회를 부여받는다. 이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에 속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를 행한다.</p>
+      </div><!-- first끝. -->
+   </div><!-- 메인끝. -->
+   <div id="subContent">
+     <ul>
+       <li><a href="#" title="홈">홈</a></li>
+       <li><a href="#" title="회사소개">회사소개</a></li>
+       <li><a href="#" title="뉴스">뉴스</a></li>
+       <li><a href="#" title="공지사항">공지사항</a></li>
+       <li><a href="#" title="고객센터">고객센터</a></li>
+     </ul>
+   </div><!-- 서브끝. -->
+   <div class="clear"></div><!-- float속성제거용 -->
+</div><!-- content끝. -->
+
+<div id="footer">
+      <span>2020.CSS활용강좌 All rights reserved.</span>
+</div><!-- footer끝. -->
+</div>
+</body>
+</html>
